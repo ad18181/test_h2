@@ -1,12 +1,7 @@
 pipeline {
 
-    agent {
-
-        docker {image 'horuszup/horusec-cli:alpha'}
-    }
-
- 
-
+    agent any 
+   
     stages {
 
         stage('Checkout') {
@@ -41,9 +36,6 @@ pipeline {
         
         stage('local machine ') {
 
-            agent any 
-                
-            
             steps {
             
                 sh'pwd'
