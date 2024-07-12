@@ -22,7 +22,10 @@ pipeline {
 
             agent {
             
-                docker { image 'horuszup/horusec-cli:alpha' }
+                docker { 
+                    image 'horuszup/horusec-cli:alpha' 
+                    args '-v /home/amogh.dixit/Projects/mount:/mount'
+                }
             
             } 
             
