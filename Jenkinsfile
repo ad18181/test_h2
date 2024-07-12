@@ -36,7 +36,7 @@ pipeline {
                 
             }
             environmant {
-                work = ${WORKSPACE}
+                work = "${WORKSPACE}"
             }
 
         }
