@@ -32,7 +32,7 @@ pipeline {
             steps {
             
                 sh'cd /mount'
-                sh 'horusec start -p="./" --disable-docker="true" --config-file-path=horusec-config.json'
+                sh 'horusec start -p="./" --disable-docker="true" -o json --json-output-file ${WORKSPACE}/
                 
             }
 
