@@ -28,6 +28,10 @@ pipeline {
                 }
             
             } 
+
+            environment {
+                work = "${WORKSPACE}"
+            }
             
             steps {
             
@@ -35,9 +39,7 @@ pipeline {
                 sh 'horusec start -p="./" --disable-docker="true" -o json --json-output-file ${WORKSPACE}/report.json'
                 
             }
-            environment {
-                work = "${WORKSPACE}"
-            }
+            
 
         }
         
