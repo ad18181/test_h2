@@ -30,7 +30,7 @@
   ],
   "horusecCliHeaders": {},
   "horusecCliHorusecApiUri": "",
-  "horusecCliJsonOutputFilepath": "/var/lib/jenkins/workspace/mount_test_main@2/report.json",
+  "horusecCliJsonOutputFilepath": "/home/amogh.dixit/Projects/mount/report.json",
   "horusecCliLogFilePath": "/tmp/horusec-2024-07-03-16-53-43.log",
   "horusecCliMonitorRetryInSeconds": 15,
   "horusecCliPrintOutputType": "json",
