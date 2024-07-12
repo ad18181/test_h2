@@ -42,7 +42,7 @@ pipeline {
 
             steps {
             
-                sh'touch /var/lib/jenkins/workspace/mount_test_main@2/report.json'
+                sh'cat  /var/lib/jenkins/workspace/mount_test_main@2/report.json'
                 
             }
 
