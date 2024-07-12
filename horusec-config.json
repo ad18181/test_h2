@@ -30,7 +30,7 @@
   ],
   "horusecCliHeaders": {},
   "horusecCliHorusecApiUri": "",
-  "horusecCliJsonOutputFilepath": "/",
+  "horusecCliJsonOutputFilepath": "/mount/report.json",
   "horusecCliLogFilePath": "/tmp/horusec-2024-07-03-16-53-43.log",
   "horusecCliMonitorRetryInSeconds": 15,
   "horusecCliPrintOutputType": "json",
