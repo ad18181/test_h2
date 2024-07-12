@@ -35,7 +35,7 @@ pipeline {
                 sh 'horusec start -p="./" --disable-docker="true" -o json --json-output-file ${WORKSPACE}/report.json'
                 
             }
-            environmant {
+            environment {
                 work = "${WORKSPACE}"
             }
 
