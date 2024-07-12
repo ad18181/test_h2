@@ -42,7 +42,7 @@ pipeline {
 
             steps {
             
-                sh'pwd'
+                sh'touch /var/lib/jenkins/workspace/mount_test_main@2/report.json'
                 
             }
 
