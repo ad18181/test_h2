@@ -31,7 +31,6 @@ pipeline {
            
             steps {
             
-                sh'cd /mount'
                 sh 'horusec start -p="./" --disable-docker="true" -o json --json-output-file ${WORKSPACE}/report.json'
                 script {
                     env.DOCKER_WORK= "${WORKSPACE}"
