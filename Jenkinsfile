@@ -34,8 +34,10 @@ pipeline {
             
                 sh'cd /mount'
                 sh 'horusec start -p="./" --disable-docker="true" -o json --json-output-file ${WORKSPACE}/report.json'
-                env.DOCKER_WORK=pwd()
-                sh'echo "workspace = ${env.env.DOCKER_WORK}"'
+                environment {
+                    DOCKER_WORK= "${WORKSPACE}"
+                }
+                sh'echo "workspace = ${DOCKER_WORK}"'
                 
             }
             
