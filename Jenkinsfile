@@ -24,7 +24,6 @@ pipeline {
             
                 docker { 
                     image 'horuszup/horusec-cli:alpha' 
-                    args '-v /home/amogh.dixit/Projects/mount:/mount:rw,z'
                 }
             
             } 
